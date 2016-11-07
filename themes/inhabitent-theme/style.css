@@ -656,3 +656,45 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+.site-footer {
+  background: url(/images/dark-wood@2x.png);
+  background-size: 512px 512px;
+  padding: 5% 0 2% 0; }
+
+.footer-left {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+  .footer-left .contact-us,
+  .footer-left .business-hours {
+    -ms-flex: 25%;
+        flex: 25%; }
+    .footer-left .contact-us h3,
+    .footer-left .business-hours h3 {
+      text-transform: uppercase;
+      /*color: $brand_color_orange;*/ }
+    .footer-left .contact-us p,
+    .footer-left .business-hours p {
+      color: white; }
+  .footer-left .contact-us {
+    margin-left: 5%; }
+    .footer-left .contact-us .fa {
+      padding: 5px;
+      font-size: 1.3rem; }
+  .footer-left .footer-logo {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    margin-right: 4%;
+    text-align: end; }
+
+.footer-bottom {
+  text-align: center;
+  text-decoration: none; }
+  .footer-bottom span {
+    text-transform: uppercase; }
+  .footer-bottom p {
+    color: white; }
