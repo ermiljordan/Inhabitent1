@@ -656,11 +656,17 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+.main-navigation {
+  width: 50px;
+  position: fixed;
+  /*display: flex;
+  justify-content: flex-end;*/ }
+
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
 .site-footer {
-  background: url(/images/dark-wood@2x.png);
+  background-image: url(../../images/dark-wood@2x.png);
   background-size: 512px 512px;
   padding: 5% 0 2% 0; }
 
@@ -698,3 +704,13 @@ object {
     text-transform: uppercase; }
   .footer-bottom p {
     color: white; }
+
+.hero-images {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/home-hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center; }
