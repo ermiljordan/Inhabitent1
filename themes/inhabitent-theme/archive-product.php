@@ -1,3 +1,4 @@
+
 <?php
 /**
  * The template for displaying archive pages.
@@ -7,7 +8,7 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
+	<div id="primary" class="content-area product-area">
 		<main id="main" class="site-main" role="main">
 
 		<?php if ( have_posts() ) : ?>
@@ -18,13 +19,16 @@ get_header(); ?>
 					the_archive_description( '<div class="taxonomy-description">', '</div>' );
 				?>
 			</header><!-- .page-header -->
-
+    <section class= "all-products">
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
-				<?php
-					get_template_part( 'template-parts/content' );
-				?>
+                <div class = "one-product">
+				    <?php
+					    get_template_part( 'template-parts/content' );
+				    ?>
+                    <?php echo CFS()->get( 'product_price' ); ?>
+                </div>
 
 			<?php endwhile; ?>
 
@@ -35,9 +39,9 @@ get_header(); ?>
 			<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
 		<?php endif; ?>
-
+	</section>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
+
 <?php get_footer(); ?>

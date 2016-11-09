@@ -102,3 +102,17 @@ require get_template_directory() . '/inc/template-tags.php';
  * Custom functions that act independently of the theme templates.
  */
 require get_template_directory() . '/inc/extras.php';
+
+// 
+// function my_styles_metho() {
+// 	if(!is_page_template( 'about.php') ){
+// 		return;
+// 	}
+// 	$url = CFS() -> get ( 'about_background_image' );
+// 	$custom_css = " .about-hero{
+// 									 background-image: url: ({$url})
+// 								 }";
+// 	 wp_add_inline_style( 'red-starter-style', $custom_css )
+// }
+//
+// add_action( 'wp_enqueue_scripts', 'my_style_method' );

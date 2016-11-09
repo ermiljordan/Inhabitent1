@@ -659,8 +659,11 @@ object {
 .main-navigation {
   width: 50px;
   position: fixed;
-  /*display: flex;
-  justify-content: flex-end;*/ }
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
+  margin-left: 50px; }
 
 /*--------------------------------------------------------------
 # Footer
@@ -714,3 +717,56 @@ object {
   display: flex;
   -ms-flex-pack: center;
       justify-content: center; }
+
+.adventures {
+  display: -ms-flexbox;
+  display: flex;
+  height: 750px;
+  margin: 0 auto;
+  width: 90%;
+  margin-bottom: 20px; }
+
+.latest-adventures {
+  font-size: 3rem;
+  text-transform: uppercase;
+  text-align: center; }
+
+.photo-1 {
+  background-image: url(../../images/adventure-photos/canoe-girl.jpg);
+  height: 100%;
+  width: 50%;
+  padding-left: 3%;
+  padding-right: 3%;
+  background-size: cover, cover;
+  border-right: solid 10px white;
+  font-size: 4.6rem; }
+
+.right-photo {
+  width: 50%;
+  height: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.photo-2 {
+  background-image: url(../../images/adventure-photos/beach-bonfire.jpg);
+  height: 50%;
+  width: 100%;
+  background-size: cover, cover;
+  border-left: solid 10px white;
+  border-bottom: solid 10px white; }
+
+.photo-3 {
+  background-image: url(../../images/adventure-photos/mountain-hikers.jpg);
+  height: 50%;
+  width: 100%;
+  background-size: cover,cover;
+  border-left: solid 10px white;
+  border-bottom: solid 10px white; }
+
+.product-area {
+  height: 2000px; }
+
+.all-products {
+  height: 2000px; }
