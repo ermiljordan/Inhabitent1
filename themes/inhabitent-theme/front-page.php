@@ -21,6 +21,23 @@ get_header(); ?>
   </main><!-- #main -->
 </div><!-- #primary -->
 
+<div class = "shop-stuff">
+   <?php
+      $terms = get_terms('product_type');
+       foreach ($terms as $term) {
+
+       $url = get_term_link ($term->slug , 'product_type');
+       ?>
+      <img src="<?php echo get_template_directory_uri();?>/images/product-type-icons/<?php echo $term->slug; ?>.svg">
+
+       <div class = 'shop-offers'><p><?php echo $term->description ?></p>
+       <a href= '$url' class='button'><?php echo $term->name ?></a> </div>
+      <?php
+      }
+      ?>
+      
+ </div> <!-- shop stuff -->
+
       <section class ="inhabitent-journal"></section>
       <h2 class ="entry-class"></h2>
 

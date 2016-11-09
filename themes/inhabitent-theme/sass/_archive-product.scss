@@ -1,6 +1,37 @@
-.product-area {
-  height: 2000px;
+
+/*--------------------------------------------------------------
+# Archive - Product
+--------------------------------------------------------------*/
+
+h1.page-title {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 5% 0 10% 0;
 }
-.all-products{
-  height: 2000px;
+
+.allProducts {
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom: 5%;
+    .productDetails {
+        width: 25%;
+        height: 300px;
+        margin-bottom: 2%;
+    }
+}
+
+.one-product .entry-header {
+    img {
+        max-height: 250px;
+        width: 25%;
+    }
+}
+
+.archive .entry-content {
+    display: none;
+}
+
+.archive .entry-title {
+    font-size: 1rem;
+    color: black;
 }

@@ -1,7 +1,26 @@
-.main-navigation {
-  width: 50px;
-  position: fixed;
-  display: flex;
-  justify-content: flex-end;
-  margin-left: 50px;
+.header-background {
+    display: flex;
+    background: rgba(255, 255, 255, 0.8);
+    border-bottom: 1px solid #e1e1e1;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+
+.header {
+    display: flex;
+    height: 50px;
+    width: 1120px;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.logo-top {
+    height: 55px;
+    width: auto;
+    padding-bottom: 15px;
+}
+
+.main-nav-bar {
+    display: inline-block;
 }

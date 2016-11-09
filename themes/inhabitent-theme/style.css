@@ -656,14 +656,31 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
-.main-navigation {
-  width: 50px;
-  position: fixed;
+.header-background {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: end;
-      justify-content: flex-end;
-  margin-left: 50px; }
+  background: rgba(255, 255, 255, 0.8);
+  border-bottom: 1px solid #e1e1e1;
+  width: 100%;
+  position: fixed;
+  z-index: 1; }
+
+.header {
+  display: -ms-flexbox;
+  display: flex;
+  height: 50px;
+  width: 1120px;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  margin: 0 auto; }
+
+.logo-top {
+  height: 55px;
+  width: auto;
+  padding-bottom: 15px; }
+
+.main-nav-bar {
+  display: inline-block; }
 
 /*--------------------------------------------------------------
 # Footer
@@ -731,6 +748,12 @@ object {
   text-transform: uppercase;
   text-align: center; }
 
+div .shop-stuff {
+  display: -ms-flexbox;
+  display: flex; }
+  div .shop-stuff img {
+    height: 75px; }
+
 .photo-1 {
   background-image: url(../../images/adventure-photos/canoe-girl.jpg);
   height: 100%;
@@ -765,8 +788,44 @@ object {
   border-left: solid 10px white;
   border-bottom: solid 10px white; }
 
-.product-area {
-  height: 2000px; }
+/*--------------------------------------------------------------
+# Archive - Product
+--------------------------------------------------------------*/
+h1.page-title {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 5% 0 10% 0; }
 
-.all-products {
-  height: 2000px; }
+.allProducts {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+  margin-bottom: 5%; }
+  .allProducts .productDetails {
+    width: 25%;
+    height: 300px;
+    margin-bottom: 2%; }
+
+.one-product .entry-header img {
+  max-height: 250px;
+  width: 25%; }
+
+.archive .entry-content {
+  display: none; }
+
+.archive .entry-title {
+  font-size: 1rem;
+  color: black; }
+
+.about-hero {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  height: 100vh;
+  color: white;
+  text-transform: uppercase;
+  font-size: 2rem; }
