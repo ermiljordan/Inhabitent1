@@ -829,3 +829,13 @@ h1.page-title {
   color: white;
   text-transform: uppercase;
   font-size: 2rem; }
+
+.about-content {
+  height: 600px;
+  margin: 0 auto;
+  width: 1120px; }
+  .about-content h2 {
+    text-transform: uppercase;
+    text-align: center; }
+  .about-content p {
+    margin: 0 5rem; }

@@ -1,24 +1,15 @@
-<?php /* Template Name: About Page */ ?>
-<?php get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
-      
+<?php /* Template Name: About Page */?>
+<?php get_header();?>
+<div class = "about-hero">
+<h1>About</h1>
+</div>
+<section class = "about-content">
 
-			<?php while ( have_posts() ) : the_post(); ?>
+	<h2><?php echo CFS()->get( 'our_story' );?></h2>
+	<p><?php echo CFS()->get( 'content_of_our_story' );?></p>
+	<h2><?php echo CFS()->get( 'our_team' );?></h2>
+	<p><?php echo CFS()->get( 'content_of_our_team' );?></p>
 
-				<?php get_template_part( 'template-parts/content', 'page' ); ?>
-
-        <h2 class="title">Our story</h2>
-          <?php echo CFS()->get( 'our_story' ); ?>
-
-          <h2 class="title">Our team</h2>
-          <?php echo CFS()->get( 'our_team' ); ?>
-
-			<?php endwhile; // End of the loop. ?>
-
-		</main><!-- #main -->
-	</div><!-- #primary -->
-
-<?php get_sidebar(); ?>
+</section>
 <?php get_footer(); ?>
