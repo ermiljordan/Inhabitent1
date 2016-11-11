@@ -43,7 +43,9 @@ function tent_styles_method() {
        wp_add_inline_style( 'red-starter-style', $custom_css );
 }
 add_action( 'wp_enqueue_scripts', 'tent_styles_method' );
-// get sixteen posts on product page ************************************
+/*****************/
+/*GET  16TH POST*/
+/***************/
 function get_product_posts($query) {
 	if( is_post_type_archive( 'product') && !is_admin() && $query->is_main_query()) {
 		$query->set ('posts_per_page', '16');
@@ -58,3 +60,4 @@ function archive_product_title( $title ) {
     return $title;
 }
 add_filter( 'get_the_archive_title', 'archive_product_title');
+
