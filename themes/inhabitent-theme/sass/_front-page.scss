@@ -19,13 +19,47 @@
   text-align: center;
 }
 
-
-div .shop-stuff {
-  display: flex;
-  img {
-    height: 75px;
-  }
+/*SHOP STUFF*/
+.shop-stuff h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2rem;
+  margin-top: 5%;
 }
+.shop-section {
+  display: flex;
+  justify-content: space-around;
+  margin: 2% 10% 5% 10%;
+  padding: 2%;
+}
+.home .shop-stuff-content {
+  margin: 15px;
+  width: 365.5px;
+  line-height: 1.2rem;
+  border: 1px solid #e1e1e1;
+  border-top: 3px solid #e1e1e1;
+  padding: 1%;
+  &:hover {
+    border-color: #d99054
+  }
+  img {
+    height: 70px;
+    width:70px;
+  }
+  a {
+    text-decoration: none;
+    background-color:#19625d;
+    padding:15px;
+    color: white;
+    text-transform: uppercase;
+  }
+  &:hover{
+    background-color: #19625d darken, 10%; 
+    }
+}
+
+/*INHABITENT JOURNAL*/
+
 
 
 .photo-1{

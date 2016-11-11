@@ -21,22 +21,32 @@ get_header(); ?>
   </main><!-- #main -->
 </div><!-- #primary -->
 
-<div class = "shop-stuff">
-   <?php
-      $terms = get_terms('product_type');
-       foreach ($terms as $term) {
+<section class = "shop-stuff">
+  <h2>Shop Stuff</h2>
+    <div class="shop-section">
 
-       $url = get_term_link ($term->slug , 'product_type');
-       ?>
-      <img src="<?php echo get_template_directory_uri();?>/images/product-type-icons/<?php echo $term->slug; ?>.svg">
-
-       <div class = 'shop-offers'><p><?php echo $term->description ?></p>
-       <a href= '$url' class='button'><?php echo $term->name ?></a> </div>
-      <?php
-      }
+      <?php   
+          $terms = get_terms('product_type');
+          foreach ($terms as $term) {
       ?>
-      
- </div> <!-- shop stuff -->
+
+      <?php
+        $url = get_term_link ($term->slug , 'product_type');
+      ?>
+
+    <div class="shop-stuff-content">
+      <img src="<?php echo get_template_directory_uri();?>/images/product-type-icons/<?php echo $term->slug; ?>.svg">
+        <p>
+          <?php echo $term->description ?>
+        </p>
+
+        <p><a href= '$url' class='button'><?php echo $term->name ?></a></p>
+    </div>
+        <?php
+        }
+        ?>
+  </div>
+ </section> <!-- shop stuff -->
 
       <section class ="inhabitent-journal"></section>
       <h2 class ="entry-class"></h2>
