@@ -48,9 +48,39 @@ get_header(); ?>
   </div>
  </section> <!-- shop stuff -->
 
-      <section class ="inhabitent-journal"></section>
-      <h2 class ="entry-class"></h2>
 
+<!--INHABITENT JOURNAL-->
+<section class ="inhabitent-journal"></section>
+  <h2>Inhabitent Journal</h2>
+    <div class="get-post">
+
+      <?php 
+       $args = array( 'post_type' => 'post',
+        'posts_per_page' => 3,
+        'order' => 'DESC',);
+
+
+        $product_posts = get_posts( $args );
+      ?>
+
+      <?php foreach ( $product_posts as $post ) : setup_postdata( $post ); ?>
+        <div class ="post-content">
+          <?php the_post_thumbnail(); ?>
+        <div class="journal-info">
+          <p> <?php the_date(); ?>
+              <?php $comments_count = wp_count_comments();
+              echo $comments_count->approved . "Comments"; ?>
+          </p>
+
+          <h3><a href ="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+          <a class="read" href="<?php the_permalink(); ?>">Read entry</a>
+        </div>
+        </div>
+      <?php endforeach; wp_reset_postdata(); ?>
+    </div>
+</section>
+
+<!--ADVENTURE TIME!-->
       <div>
         <h2 class="latest-adventures">Latest Adventures</h2>
       <section class ="adventures">

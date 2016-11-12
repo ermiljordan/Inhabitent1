@@ -20,7 +20,7 @@
 }
 
 /*SHOP STUFF*/
-.shop-stuff h2 {
+ h2 {
   text-align: center;
   text-transform: uppercase;
   font-size: 2rem;
@@ -59,6 +59,40 @@
 }
 
 /*INHABITENT JOURNAL*/
+  .home .get-post {
+    display: flex;
+    margin: 0 5%;
+  }
+  .post-content {
+    margin: 15px;
+    width: 365.5px;
+    line-height: 1.2rem;
+    border: 1px solid #e1e1e1;
+      h3 a {
+        text-decoration: none;
+        color: #19625d;
+        text-transform: uppercase;
+        &:hover {
+          color: black;
+        }
+      }
+      img {
+        max-height: 250px;
+        border-bottom: 5px solid #e1e1e1;
+      }
+      a.read {
+        text-decoration: none;
+        border: 1px solid black;
+        padding: 10px;
+        color: black;
+        text-transform: uppercase;
+         &:hover{
+           background-color:#19625d;
+           border: done;
+           color: white;
+         }
+      }
+  }
 
 
 
@@ -89,9 +123,7 @@
   border-bottom: solid 10px white;
 }
 
-.bottom-photo{
 
-}
 .photo-3{
   background-image: url(../../images/adventure-photos/mountain-hikers.jpg);
   height: 50%;

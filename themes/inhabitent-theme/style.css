@@ -749,7 +749,7 @@ object {
   text-align: center; }
 
 /*SHOP STUFF*/
-.shop-stuff h2 {
+h2 {
   text-align: center;
   text-transform: uppercase;
   font-size: 2rem;
@@ -785,6 +785,36 @@ object {
     background-color: #19625d darken, 10%; }
 
 /*INHABITENT JOURNAL*/
+.home .get-post {
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 5%; }
+
+.post-content {
+  margin: 15px;
+  width: 365.5px;
+  line-height: 1.2rem;
+  border: 1px solid #e1e1e1; }
+  .post-content h3 a {
+    text-decoration: none;
+    color: #19625d;
+    text-transform: uppercase; }
+    .post-content h3 a:hover {
+      color: black; }
+  .post-content img {
+    max-height: 250px;
+    border-bottom: 5px solid #e1e1e1; }
+  .post-content a.read {
+    text-decoration: none;
+    border: 1px solid black;
+    padding: 10px;
+    color: black;
+    text-transform: uppercase; }
+    .post-content a.read:hover {
+      background-color: #19625d;
+      border: done;
+      color: white; }
+
 .photo-1 {
   background-image: url(../../images/adventure-photos/canoe-girl.jpg);
   height: 100%;
