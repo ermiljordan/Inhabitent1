@@ -81,21 +81,35 @@ get_header(); ?>
 </section>
 
 <!--ADVENTURE TIME!-->
-      <div>
-        <h2 class="latest-adventures">Latest Adventures</h2>
-      <section class ="adventures">
+  <div class= "latest-adventures">
+    <h2>Latest Adventures</h2>
+
+    <section class= "adventures">
         <div class="photo-1">
+            <h3><a class = "adventure-link" href ="#">Getting Back to Nature in a Canoe</a></h3>
+            <p><a class = "read-more-button" href ="#">Read More</a></p>
         </div>
-        <div class="right-photo">
-          <div class="photo-2">
-          </div>
-        <div class="bottom-photo">
-          <div class= "photo-3">
-          </div>
-          <div class="photo-4">
-          </div>
+        <div class="photo-right">
+            <div class="photo-2">
+                <h3><a class = "adventure-link" href ="#">A night with Friends at the Beach</a></h3><br>
+                <p><a class = "read-more-button" href ="#">Read More</a></p>
+
+            </div>
+            <div class = "photo-bottom">  
+                <div class="photo-3">
+                    <h3><a class = "adventure-link" href ="#">Taking in the View at Big Mountain</a></h3>
+                    <p><a class = "read-more-button" href ="#">Read More</a></p>
+
+                </div>
+                <div class="photo-4">
+                    <h3><a class = "adventure-link" href ="#">Star-Gazing at the Night Sky</a></h3>
+                    <p><a class = "read-more-button" href ="#">Read More</a></p>
+
+                </div>
+            </div>
         </div>
-        </div>
-      </section>
-    </div>
+        
+    </section>
+     <p><a class = "more-adventures-button" href ="#">More Adventures</a></p>
+</div>
 <?php get_footer(); ?>
