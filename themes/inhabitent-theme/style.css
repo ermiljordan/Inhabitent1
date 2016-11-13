@@ -883,6 +883,7 @@ h2 {
   background: linear-gradient(rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), url(../../images/adventure-photos/mountain-hikers.jpg) center;
   background-size: cover, cover;
   border-top: solid 10px white;
+<<<<<<< HEAD
   border-left: solid 10px white;
   border-right: solid 10px white;
   font-size: 1.5rem; }
@@ -894,6 +895,19 @@ h2 {
   background: linear-gradient(rgba(0, 0, 0, 0.1) 0, rgba(0, 0, 0, 0.1)), url(../../images/adventure-photos/night-sky.jpg) center;
   background-size: cover, cover;
   border-left: solid 10px white;
+=======
+  border-left: solid 10px white;
+  border-right: solid 10px white;
+  font-size: 1.5rem; }
+
+.photo-4 {
+  height: 100%;
+  width: 50%;
+  padding: 1.6rem 2rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.1) 0, rgba(0, 0, 0, 0.1)), url(../../images/adventure-photos/night-sky.jpg) center;
+  background-size: cover, cover;
+  border-left: solid 10px white;
+>>>>>>> 44af901321a6e22f7bc0897ef607d47e81b8eb9c
   border-top: solid 10px white;
   font-size: 1.5rem; }
 
