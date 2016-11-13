@@ -24,7 +24,7 @@ get_header(); ?>
   <h2>Shop Stuff</h2>
     <div class="shop-section">
 
-      <?php   
+      <?php
           $terms = get_terms('product_type');
           foreach ($terms as $term) {
       ?>
@@ -53,7 +53,7 @@ get_header(); ?>
   <h2>Inhabitent Journal</h2>
     <div class="get-post">
 
-      <?php 
+      <?php
        $args = array( 'post_type' => 'post',
         'posts_per_page' => 3,
         'order' => 'DESC',);
@@ -92,7 +92,7 @@ get_header(); ?>
                 <p><a class = "read-more-button" href ="#">Read More</a></p>
 
             </div>
-            <div class = "photo-bottom">  
+            <div class = "photo-bottom">
                 <div class="photo-3">
                     <h3><a class = "adventure-link" href ="#">Taking in the View at Big Mountain</a></h3>
                     <p><a class = "read-more-button" href ="#">Read More</a></p>
@@ -105,12 +105,11 @@ get_header(); ?>
                 </div>
             </div>
         </div>
-        
+
     </section>
      <p><a class = "more-adventures-button" href ="#">More Adventures</a></p>
 </div>
-<<<<<<< HEAD
+
 <?php get_footer(); ?>
-=======
+
 <?php get_footer(); ?>
->>>>>>> 44af901321a6e22f7bc0897ef607d47e81b8eb9c

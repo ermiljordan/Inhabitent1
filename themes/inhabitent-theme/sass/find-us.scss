@@ -1,0 +1,44 @@
+.page-id-59 .site-content {
+  display: flex;
+}
+.page-id-59 .content-area {
+  border-right: 1px solid #e1e1e1;
+  width: 100%;
+  margin-left: 5%;
+  padding-right: 5%;
+}
+.page-id-59 .site-main {
+  padding-top: 10%;
+}
+.page-id-59 .entry-title {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.page-id-59 .entry-content {
+  h2{
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: left;
+  }
+}
+
+.wpcf7-form {
+    input[type=email],
+    input[type=password],
+    input[type=search],
+    input[type=text],
+    input[type=url] {
+        border-radius: 0;
+        padding: 6px;
+    }
+    label {
+        text-transform: uppercase;
+        font-family: 'novocento';
+    }
+}
+
+.required {
+  color: #d99054;
+}
