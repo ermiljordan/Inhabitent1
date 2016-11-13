@@ -94,41 +94,129 @@
       }
   }
 
-
-
-.photo-1{
-  background-image: url(../../images/adventure-photos/canoe-girl.jpg);
-  height: 100%;
-  width: 50%;
-  padding-left: 3%;
-  padding-right: 3%;
-  background-size: cover, cover;
-  border-right: solid 10px white;
-  font-size: 4.6rem;
+/*ADVENTURE*/
+.adventures {
+    display: flex;
+    height: 600px;
+    margin: 0 auto;
+    width: 1120px;
+    margin-bottom: 2rem;
+    h3 {
+        font-weight: normal;
+    }
+    a {
+        text-decoration: none;
+        color: white;
+        &:visited {
+            color: white;
+        }
+        &:hover {
+            color: #f0e4d1
+        }
+    }
+    p a:hover {
+        color: white;
+    }
 }
 
-.right-photo {
-  width:50%;
-  height:100%;
-  display: flex;
-  flex-wrap:wrap;
+.latest-adventures {
+    line-height: 1.2;
+    width: 1120px;
+    margin: 0 auto;
+    margin-bottom: 5rem;
 }
 
-.photo-2{
-  background-image: url(../../images/adventure-photos/beach-bonfire.jpg);
-  height: 50%;
-  width: 100%;
-  background-size: cover, cover;
-  border-left: solid 10px white;
-  border-bottom: solid 10px white;
+.photo-1 {
+    height: 100%;
+    width: 50%;
+    padding: 1.6rem 2rem;
+    background: linear-gradient(rgba(0, 0, 0, .4) 0, rgba(0, 0, 0, .4)), url(../../images/adventure-photos/canoe-girl.jpg) center;
+    background-size: cover, cover;
+    border-right: solid 10px white;
+    font-size: 2.8rem;
 }
 
+.photo-right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
 
-.photo-3{
-  background-image: url(../../images/adventure-photos/mountain-hikers.jpg);
-  height: 50%;
-  width: 100%;
-  background-size: cover,cover;
-  border-left: solid 10px white;
-  border-bottom: solid 10px white;
+.photo-bottom {
+    display: flex;
+    width: 100%;
+    height: 50%
+}
+
+.photo-2 {
+    height: 50%;
+    width: 100%;
+    padding: 1.6rem 2rem;
+    background: linear-gradient(rgba(0, 0, 0, .4) 0, rgba(0, 0, 0, .4)), url(../../images/adventure-photos/beach-bonfire.jpg) center;
+    background-size: cover, cover;
+    border-left: solid 10px white;
+    border-bottom: solid 10px white;
+    font-size: 2rem;
+    p {
+        margin: 0;
+    }
+}
+
+.photo-3 {
+    height: 100%;
+    width: 50%;
+    padding: 1.6rem 2rem;
+    background: linear-gradient(rgba(0, 0, 0, .4) 0, rgba(0, 0, 0, .4)), url(../../images/adventure-photos/mountain-hikers.jpg) center;
+    background-size: cover, cover;
+    border-top: solid 10px white;
+    border-left: solid 10px white;
+    border-right: solid 10px white;
+    font-size: 1.5rem;
+}
+
+.photo-4 {
+    height: 100%;
+    width: 50%;
+    padding: 1.6rem 2rem;
+    background: linear-gradient(rgba(0, 0, 0, .1) 0, rgba(0, 0, 0, .1)), url(../../images/adventure-photos/night-sky.jpg) center;
+    background-size: cover, cover;
+    border-left: solid 10px white;
+    border-top: solid 10px white;
+    font-size: 1.5rem;
+}
+
+.read-more {
+    padding-left: 3rem;
+}
+
+.read-more-button {
+    border: 1px solid white;
+    font-size: 1rem;
+    padding: .8rem 1.2rem;
+    text-transform: uppercase;
+    &:hover {
+        background-color: #19625d;
+        border: 1px solid #19625d;
+        a:hover {
+            color: white;
+        }
+    }
+}
+
+.more-adventures-button {
+    margin-top: 1rem;
+    font-size: 1rem;
+    padding: .8rem 1.2rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    background-color: #19625d;
+    &:hover {
+        background: darken(#19625d, 10%);
+        color: white;
+    }
+    &:visited {
+        color: white;
+    }
 }

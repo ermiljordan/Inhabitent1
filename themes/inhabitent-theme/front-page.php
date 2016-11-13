@@ -4,7 +4,6 @@
  * Template Name: Front Page
  * @package RED_Starter_Theme
  */
-
 get_header(); ?>
   <div class ="hero-images">
     <img src="<?php echo get_template_directory_uri() . '/images/logos/inhabitent-logo-full.svg'; ?>" class ="hero-img" alt="inhabitent circle logo" />
@@ -58,8 +57,6 @@ get_header(); ?>
        $args = array( 'post_type' => 'post',
         'posts_per_page' => 3,
         'order' => 'DESC',);
-
-
         $product_posts = get_posts( $args );
       ?>
 
@@ -81,21 +78,39 @@ get_header(); ?>
 </section>
 
 <!--ADVENTURE TIME!-->
-      <div>
-        <h2 class="latest-adventures">Latest Adventures</h2>
-      <section class ="adventures">
+  <div class= "latest-adventures">
+    <h2>Latest Adventures</h2>
+
+    <section class= "adventures">
         <div class="photo-1">
+            <h3><a class = "adventure-link" href ="#">Getting Back to Nature in a Canoe</a></h3>
+            <p><a class = "read-more-button" href ="#">Read More</a></p>
         </div>
-        <div class="right-photo">
-          <div class="photo-2">
-          </div>
-        <div class="bottom-photo">
-          <div class= "photo-3">
-          </div>
-          <div class="photo-4">
-          </div>
+        <div class="photo-right">
+            <div class="photo-2">
+                <h3><a class = "adventure-link" href ="#">A night with Friends at the Beach</a></h3><br>
+                <p><a class = "read-more-button" href ="#">Read More</a></p>
+
+            </div>
+            <div class = "photo-bottom">  
+                <div class="photo-3">
+                    <h3><a class = "adventure-link" href ="#">Taking in the View at Big Mountain</a></h3>
+                    <p><a class = "read-more-button" href ="#">Read More</a></p>
+
+                </div>
+                <div class="photo-4">
+                    <h3><a class = "adventure-link" href ="#">Star-Gazing at the Night Sky</a></h3>
+                    <p><a class = "read-more-button" href ="#">Read More</a></p>
+
+                </div>
+            </div>
         </div>
-        </div>
-      </section>
-    </div>
+        
+    </section>
+     <p><a class = "more-adventures-button" href ="#">More Adventures</a></p>
+</div>
+<<<<<<< HEAD
 <?php get_footer(); ?>
+=======
+<?php get_footer(); ?>
+>>>>>>> 44af901321a6e22f7bc0897ef607d47e81b8eb9c
