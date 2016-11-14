@@ -27,6 +27,16 @@ function my_login_logo() { ?>
    </style>
 <?php }
 add_action( 'login_enqueue_scripts', 'my_login_logo' );
+//change URL of custom logo on login page
+function my_loginURL() {
+    return '#';
+}
+add_filter('login_headerurl', 'my_loginURL');
+//change the title tag of this link
+function my_loginURLtext() {
+    return 'Inhabitent Camping Supply Co.';
+}
+add_filter('login_headertitle', 'my_loginURLtext');
  /**
 * Custom About Page background image
 */
@@ -60,3 +70,19 @@ function archive_product_title( $title ) {
     return $title;
 }
 add_filter( 'get_the_archive_title', 'archive_product_title');
+
+/*
+*   Retrieve the archive title for Do, Eat, Sleep and Wear
+*/
+function inhabitent_archive_title( $title ) {
+    if ( is_category() ) {
+        $title = single_cat_title( '', false );
+    } elseif ( is_tag() ) {
+        $title = single_tag_title( '', false );
+    } elseif ( is_tax() ) {
+        $title = single_term_title( '', false );
+    }
+
+    return $title;
+}
+add_filter( 'get_the_archive_title', 'inhabitent_archive_title' );

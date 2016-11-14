@@ -6,6 +6,9 @@
     display: flex;
     justify-content: center;
 }
+.site-content {
+    padding-top: 50px;
+}
 .adventures{
   display:flex;
   height: 750px;
@@ -54,7 +57,7 @@
     text-transform: uppercase;
   }
   &:hover{
-    background-color: #19625d darken, 10%; 
+    background-color: #19625d darken, 10%;
     }
 }
 
