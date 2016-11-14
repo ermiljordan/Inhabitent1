@@ -2,40 +2,46 @@
 /**
  * The template for displaying the footer.
  *
- * @package Inhabitent_Theme
+ * @package RED_Starter_Theme
  */
-
 ?>
 
 			</div><!-- #content -->
 
 			<footer id="colophon" class="site-footer" role="contentinfo">
-				<div class="site-info">
-					<div class ="footer-left">
-						<div class ="contact-us">
-							<h3>Contact Us</h3>
-								<p><i class ="fa fa-envelope" aria-hidden="true"></i> info@inhabitent.com</p>
-								<p><i class="fa fa-phone" aria-hidden="true"></i> 778-456-7891</p>
-								<p><i class="fa fa-facebook-square" aria-hidden="true"></i> <i class="fa fa-twitter-square" aria-hidden="true"></i> <i class="fa fa-google-plus-square" aria-hidden="true"></i></p>
-						</div>
-					
-						<div class="business-hours">
-							<h3>Business Hours</h3>
-								<p>Monday - Friday: 9am to 5pm</p>
-								<p>Saturday: 10am to 2pm</p>
-								<p>Sunday: Closed</p>
-						</div>
-				
-						<div class ="footer-logo">
-					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="logo">
-						<img src="<?php echo get_template_directory_uri() . '/images/logos/inhabitent-logo-text.svg'; ?>" class="logo" alt="Inhabitent logo" />
-					</a>
+
+				<div class="footer-content">
+
+					<div class = "contact">
+						<h3>Contact Info</h3>
+						<p>
+							<i class="fa fa-envelope fa-lg" aria-hidden="true"></i><a href="info@inhabitent.com"> info@inhabitent.com</a>
+						</p>
+						<p>
+							<i class="fa fa-phone fa-lg" aria-hidden="true"></i><a href="tel:778-456-7891"> 778-456-7891</a>
+						</p>
+						<p class="social-icons">
+							<i class="fa fa-facebook-square fa-lg" aria-hidden="true"></i>
+							<i class="fa fa-twitter-square fa-lg" aria-hidden="true"></i>
+							<i class="fa fa-google-plus-square fa-lg" aria-hidden="true"></i>
+						</p>
 					</div>
+					<div class = "business-hours">
+						<h3>Business Hours</h3>
+						<p><span class="day">Monday-Friday:</span> 9am to 5pm</p>
+						<p><span class="day">Saturday:</span> 10am to 2pm</p>
+						<p><span class="day">Sunday:</span> Closed</p>
+
 					</div>
-			
-				<div class="footer-botoom">
-					<p><span>copyright</span> &#169 Inhabitent</p>
+					<div class = "footer-content-right">
+						<div class = "logo-bottom">
+							<a href = "#"><img class ="logo-bottom" src = "<?php echo get_template_directory_uri(); ?>/images/logos/inhabitent-logo-text.svg" alt = "inhabitent logo"></a>
+						</div>
+					</div>
 				</div>
+
+				<div class="site-info">
+					Copyright &copy; 2016 Inhabitent
 				</div><!-- .site-info -->
 			</footer><!-- #colophon -->
 		</div><!-- #page -->
