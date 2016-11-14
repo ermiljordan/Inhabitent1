@@ -60,4 +60,3 @@ function archive_product_title( $title ) {
     return $title;
 }
 add_filter( 'get_the_archive_title', 'archive_product_title');
-

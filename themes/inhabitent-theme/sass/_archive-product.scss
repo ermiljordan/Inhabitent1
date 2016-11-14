@@ -1,37 +1,85 @@
 
-/*--------------------------------------------------------------
-# Archive - Product
---------------------------------------------------------------*/
-
-h1.page-title {
-    text-align: center;
-    text-transform: uppercase;
-    margin: 5% 0 10% 0;
+.archive h1.page-title {
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 10%;
+  font-weight: bold;
 }
 
-.all-products {
-    display: flex;
-    flex-flow: row wrap;
-    margin-bottom: 5%;
-    .productDetails {
-        width: 25%;
-        height: 300px;
-        margin-bottom: 2%;
+.archive .allProducts {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  margin: 0 auto;
+  width: 1120px;
+  .product-details {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            p {
+                margin: 0;
+            }
+        }
+}
+.archive .product-details {
+       max-width: 20em;
+       padding: 0;
+       overflow-x: hidden;
+       list-style: none;
+       span {
+           background-color: white;
+       }
+   }
+
+   .archive .entry-title:after {
+        float: right;
+        width: 0;
+        white-space: nowrap;
+        content: " . . . . . . . . . "
     }
-}
-
-.one-product .entry-header {
-    img {
-        max-height: 250px;
-        width: 25%;
+    .archive .entry-header {
+        border: 1px solid #a1a1a1;
+        img {
+            height: 200px;
+            width: 250px;
+            border-bottom: 5px solid #a1a1a1;
+        }
     }
-}
+    .archive .entry-title {
+        font-size: 1rem;
+        color: black;
+        margin: 0;
+        pointer-events: none;
+        font-weight: 400;
+        font-style: normal;
+        a {
+            text-decoration: none;
+            font-weight: 100;
+            font-size: normal;
+            color: black;
+        }
+    }
 
-.archive .entry-content {
-    display: none;
-}
+    .archive .page-header {
+            border-bottom: 1px dashed grey;
+            margin: 0 10% 5% 10%;
+        }
 
-.archive .entry-title {
-    font-size: 1rem;
-    color: black;
+.shop-stuff-items {
+  text-align: center;
 }
+.archive .shop-stuff-items {
+        text-align: center;
+        padding: 0;
+        margin: 5% 0 5%;
+        justify-content: space-between;
+        a {
+            margin-right: 5px;
+            text-decoration: none;
+            font-size: 1.2rem;
+            color: #248A83;
+            &:hover {
+                color: black;
+            }
+        }
+    }
