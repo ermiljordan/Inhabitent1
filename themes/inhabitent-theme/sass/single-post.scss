@@ -1,0 +1,156 @@
+.entry-header h1 {
+    color: white;
+}
+
+.entry-meta a {
+    color: white;
+    text-decoration: none;
+}
+
+.like-button,
+.twitter-button,
+.pinterest-button {
+    border: 1px solid black;
+    margin-bottom: 4rem;
+    text-decoration: none;
+    color: black;
+    font-size: .9rem;
+    padding: .6rem 1.5rem;
+    margin-top: 4%;
+    text-transform: uppercase;
+    a {
+        font-family: 'novocento';
+    }
+    &:visited {
+        color: black;
+    }
+    &:hover {
+        background-color: #248a83;
+        border: 1px solid #248a83;
+        color: white;
+    }
+}
+
+.nav-previous,
+.nav-next {
+    display: none;
+}
+
+.comment-list {
+    list-style: none;
+    img {
+        float: left;
+        margin-right: 1rem;
+        border-radius: 50%;
+        margin-top: 2rem;
+    }
+}
+
+ul li {
+    list-style: none;
+}
+
+.comment-reply-link,
+.logged-in-as a {
+    color: #248a83;
+    text-decoration: none;
+    font-family: 'merriweather';
+    padding-left: 5rem;
+    &:visited {
+        color: #248a83;
+    }
+}
+
+.comments-title {
+    font-weight: bold;
+    font-size: 2rem;
+    color: black;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.comment-reply-title {
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+    a {
+        text-decoration: none;
+        color: #248a83;
+        font-family: 'novocento';
+    }
+}
+
+.comment-form-comment label {
+    text-transform: uppercase;
+    font-family: 'novocento';
+}
+
+.comment-metadata {
+    color: grey;
+    a {
+        text-decoration: none;
+        color: #248a83;
+        &:hover {
+            color: black;
+        }
+        &:visited {
+            color: #248a83;
+        }
+    }
+}
+
+.vcard {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    margin-right: 3rem;
+    border-top: $standard-border;
+    .fn {
+        font-weight: bold;
+        font-style: normal;
+    }
+}
+
+input[type=email],
+input[type=password],
+input[type=search],
+input[type=text],
+input[type=url],
+textarea {
+    background: #f4f4f4;
+}
+
+.comment-form {
+    width: 770px;
+    input[type="text"],
+    input[type=email] {
+        width: 370px;
+    }
+    .required {
+        color: #d99054;
+    }
+    label {
+        text-transform: uppercase;
+        font-family: 'novocento';
+    }
+    .submit {
+        margin: 0;
+    }
+}
+
+.comment-form-author,
+{
+    display: flex;
+    flex-flow: column;
+    float: left;
+    font-style: none;
+}
+
+article .comment-content p {
+    padding-left: 5rem;
+}
+
+.comment-form-email {
+    display: flex;
+    flex-flow: column;
+    float: right;
+}

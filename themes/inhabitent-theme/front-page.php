@@ -92,11 +92,7 @@ get_header(); ?>
                 <p><a class = "read-more-button" href ="#">Read More</a></p>
 
             </div>
-<<<<<<< HEAD
             <div class = "photo-bottom">
-=======
-            <div class = "photo-bottom">  
->>>>>>> 44af901321a6e22f7bc0897ef607d47e81b8eb9c
                 <div class="photo-3">
                     <h3><a class = "adventure-link" href ="#">Taking in the View at Big Mountain</a></h3>
                     <p><a class = "read-more-button" href ="#">Read More</a></p>
@@ -109,7 +105,6 @@ get_header(); ?>
                 </div>
             </div>
         </div>
-<<<<<<< HEAD
 
     </section>
      <p><a class = "more-adventures-button" href ="#">More Adventures</a></p>
@@ -117,10 +112,4 @@ get_header(); ?>
 
 <?php get_footer(); ?>
 
-=======
-        
     </section>
-     <p><a class = "more-adventures-button" href ="#">More Adventures</a></p>
-</div>
->>>>>>> 44af901321a6e22f7bc0897ef607d47e81b8eb9c
-<?php get_footer(); ?>
