@@ -22,6 +22,8 @@
   text-align: center;
 }
 
+
+
 /*SHOP STUFF*/
  h2 {
   text-align: center;
@@ -42,6 +44,7 @@
   border: 1px solid #e1e1e1;
   border-top: 3px solid #e1e1e1;
   padding: 1%;
+  text-align: center;
   &:hover {
     border-color: #d99054
   }
@@ -60,7 +63,6 @@
     background-color: #19625d darken, 10%;
     }
 }
-
 /*INHABITENT JOURNAL*/
   .home .get-post {
     display: flex;

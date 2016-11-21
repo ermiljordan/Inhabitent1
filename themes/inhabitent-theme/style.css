@@ -656,31 +656,40 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
-.header-background {
-  display: -ms-flexbox;
-  display: flex;
+h1.site-title {
+  background: url(../../images/logos/inhabitent-logo-tent.svg) no-repeat;
+  background-size: 50px 33px;
+  margin: 0;
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  width: 50px; }
+
+.site-header {
   background: rgba(255, 255, 255, 0.8);
   border-bottom: 1px solid #e1e1e1;
   width: 100%;
   position: fixed;
   z-index: 1; }
+  .site-header .container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1120px;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    text-align: center; }
 
-.header {
+/*.main-nav-bar {
+    display: inline-block;
+}*/
+.main-nav-bar li {
+  padding-left: 1rem;
+  position: relative;
   display: -ms-flexbox;
-  display: flex;
-  height: 50px;
-  width: 1120px;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
-  margin: 0 auto; }
+  display: flex; }
 
-.logo-top {
-  height: 55px;
-  width: auto;
-  padding-bottom: 15px; }
-
-.main-nav-bar {
-  display: inline-block; }
+h1 {
+  line-height: 1.25; }
 
 .site-footer {
   background: url(../../images/dark-wood@2x.png);
@@ -783,7 +792,8 @@ h2 {
   line-height: 1.2rem;
   border: 1px solid #e1e1e1;
   border-top: 3px solid #e1e1e1;
-  padding: 1%; }
+  padding: 1%;
+  text-align: center; }
   .home .shop-stuff-content:hover {
     border-color: #d99054; }
   .home .shop-stuff-content img {
@@ -1188,6 +1198,9 @@ h2 {
     .widget .side-bar-address i {
       padding-top: 7px; }
 
+.widget p {
+  line-height: 3; }
+
 .page-id-59 .site-content {
   display: -ms-flexbox;
   display: flex; }
@@ -1368,7 +1381,7 @@ article .comment-content p {
       flex-flow: column;
   float: right; }
 
-.single-product .content-area {
+.single-product {
   display: -ms-flexbox;
   display: flex;
   width: 1120px;
