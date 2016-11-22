@@ -1,40 +1,34 @@
-h1.site-title {
-    background:url(../../images/logos/inhabitent-logo-tent.svg) no-repeat;
-    background-size: 50px 33px;
-    margin: 0;
-    overflow: hidden;
-    text-indent: 100%;
-    white-space: nowrap;
-    width: 50px;
-} 
 
-.site-header {
+/**********Header Styling (search bar and navigation in different file*********/
+
+.header-background {
+    display: flex;
     background: rgba(255, 255, 255, 0.8);
-    border-bottom: 1px solid #e1e1e1;
+
     width: 100%;
     position: fixed;
     z-index: 1;
-        .container {
-    margin-left: auto;
-    margin-right: auto;
+}
+
+.header {
+    display: flex;
+    height: 50px;
+    padding: .5rem 0;
     width: 1120px;
     justify-content: space-between;
-    text-align: center;
-    }
+    margin: 0 auto;
 }
 
+.logo-top {
+    height: 50px;
+    width: auto;
+    padding-bottom: 15px;
+}
 
-/*.main-nav-bar {
+.main-nav-bar {
     display: inline-block;
-}*/
-//SITE NAVIGATION//
-
-.main-nav-bar li {
+}
+.main-navigation a {
     padding-left: 1rem;
-    position: relative;
-    display: flex;
+    color: #248a83;
 }
-h1 {
-    line-height: 1.25;
-}
-

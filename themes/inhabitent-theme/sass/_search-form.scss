@@ -1,0 +1,40 @@
+/*--------------------------------------------------------------
+# Search Results Page 
+--------------------------------------------------------------*/
+
+.search-results .site-content {
+    display: flex;
+}
+
+.search-results .content-area {
+    width: 100%;
+    margin-left: 5%;
+    border-right: 1px solid #e1e1e1;
+}
+
+.search-results .site-main {
+    margin-top: 10%;
+    padding-right: 5%;
+}
+
+.search-results h1.page-title {
+    font-weight: 600;
+    letter-spacing: 2px;
+    border-bottom: 1px solid #e1e1e1;
+    font-size: 2.8rem;
+}
+
+.search-results .entry-title {
+    font-size: 2.1rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.3;
+    letter-spacing: 2px;
+    a {
+        text-decoration: none;
+        color: #248a83;
+        font-weight: 600;
+    }
+    /*&:hover {
+        color: $color__text-main;
+    }*/
+}
