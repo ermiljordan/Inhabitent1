@@ -4,7 +4,6 @@
  *
  * @package RED_Starter_Theme
  */
-
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -13,15 +12,31 @@
 			<?php the_post_thumbnail( 'large' ); ?>
 		<?php endif; ?>
 
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 
 		<div class="entry-meta">
-			<?php red_starter_posted_on(); ?> / <?php red_starter_comment_count(); ?> / <?php red_starter_posted_by(); ?>
 		</div><!-- .entry-meta -->
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
+        		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+               <p class="product-price"><?php echo CFS()->get( 'product_price' ); ?> </p>
+
 		<?php the_content(); ?>
+        <div class = "social-button">
+
+					<button type ="button"  class="black" href ="">
+						<i class="fa fa-facebook-square" aria-hidden="true"> Like</i>
+					</button>
+
+					<button type ="button" class="black" href ="">
+						<i class="fa fa-twitter" aria-hidden="true"> Tweet</i>
+					</button>
+
+					<button type ="button" class="black" href ="">
+						<i class="fa fa-pinterest" aria-hidden="true"> Pin</i>
+					</button>
+
+				</div>
 		<?php
 			wp_link_pages( array(
 				'before' => '<div class="page-links">' . esc_html( 'Pages:' ),

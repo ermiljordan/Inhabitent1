@@ -11,28 +11,24 @@
 					the_archive_description( '<div class="taxonomy-description">', '</div>' );
 				?>
 			</header><!-- .page-header -->
-    <section class= "all-products">
-
-
-			<?php /* Start the Loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
-            
-                <div class = "one-product">
-				    <?php
-					    get_template_part( 'template-parts/content-products' );
-				    ?>
-                
-                </div>
-              
-			<?php endwhile; ?>
-
-			<?php the_posts_navigation(); ?>
-
-		<?php else : ?>
-
-			<?php get_template_part( 'template-parts/content-products', 'none' ); ?>
-
-		<?php endif; ?>
+    <div id="primary" class="archive-area">
+                    <?php while ( have_posts() ) : the_post(); ?>                 
+                        <div class = "product-item">
+                        <article class= id="post-<?php the_ID(); ?>"<?php post_class(); ?>>
+                            <div class = "product-thumbnail">
+                                <a href="<?php the_permalink() ; ?> "><?php the_post_thumbnail( 'large' ); ?></a>
+                            </div>
+                            <div class = "item-price">
+                                <?php the_title( sprintf( '<h3 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h3>' ); ?>
+                                <span><?php echo CFS()->get( 'product_price' ); ?></span>
+                            </div>
+                        </article><!-- #post-## -->
+                        </div> <!-- product-item -->
+                        <?php endwhile ?>     
+                </div> <!-- archive-area -->
+                    <?php else : ?>
+                        <?php get_template_part( 'template-parts/content', 'none' ); ?>
+                    <?php endif; ?>
     </section>  
 		</main><!-- #main -->
 	</div><!-- #primary -->

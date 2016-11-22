@@ -1,30 +1,72 @@
-.single-product{
-    display: flex;
+/*.taxonomy-description {
+    margin-bottom: 3rem;
+    border-bottom: 1px dashed #c8c8c8;
+
+    p {
+        text-align: center;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+}
+
+.single-product .site-mainhome {
+    padding-top: 50px;
+    border: none;
     width: 1120px;
-    margin: 3rem auto;
-    height: 700px;
 }
 
-.single-product .size-large {
-    max-width: 47%;
-    margin-right: 3rem;
-    margin-bottom: 6rem;
+.single-product .entry-meta {
+    display: none;
 }
+.single-product .product-price {
 
-.single-product article {
-    max-width: 53%;
-}
-
-.single-product h1 {
-    color: #d99054;
-    line-height: 1;
-    font-size: 2.5rem;
-    margin: 0;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
-
-.single-page-price {
     font-size: 1.8rem;
-    line-height: 1;
+}
+.single-product .entry-title {
+    color: #d99054;
+    margin: 0;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+
+.single-product .entry-header {
+    flex-basis: 60%;
+    img {
+        width: 90%;
+    }
+}
+
+.single-product .type-product {
+    display: flex;
+    justify-content: space-between;
+}
+
+.single-product .entry-content {
+    flex-basis: 40%;
+    margin: 0;
+    p {
+        line-height: 1.5;
+    }
+    .price {
+        font-size: 1.7rem;
+    }
+}*/
+
+.single-product .hentry {
+    display: flex;
+    justify-content: space-between;
+}
+.entry-content{
+    width: 48%;
+    line-height: 1.75;
+}
+h1 {
+    color: #d99054;
+    text-transform: uppercase;
+}
+.social-button {
+    color: #404040;
+    font-size: 1rem;
 }
