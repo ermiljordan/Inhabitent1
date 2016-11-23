@@ -50,6 +50,8 @@
     margin: 0;
     p {
         line-height: 1.5;
+        font-family: 'merriweatherlight';
+        font-size: 1.2rem;
     }
     .price {
         font-size: 1.7rem;
@@ -60,18 +62,6 @@
     padding-left: 8rem;
 }
 
-/*.single-product .hentry {
-    display: flex;
-    justify-content: space-between;
-}
-.entry-content{
-    width: 48%;
-    line-height: 1.75;
-}
-.social-button {
-    color: #404040;
-    font-size: 1rem;
-}*/
 .like-button,
 .twitter-button,
 .pinterest-button {
@@ -83,6 +73,7 @@
     padding: .6rem 1.5rem;
     margin-top: 4%;
     text-transform: uppercase;
+    font-family: 'novecento';
     a {
         font-family: 'novocento';
     }
@@ -94,4 +85,9 @@
         border: 1px solid #248a83;
         color: white;
     }
+}
+p.product-price {
+    font-family: 'novecento';
+    font-size: 1.5rem;
+
 }

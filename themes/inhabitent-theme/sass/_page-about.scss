@@ -10,15 +10,25 @@
 
 .about-content {
     height: 600px;
-    margin: 0 auto;
+    margin: 0;
     width: 1120px;
     h2 {
         text-transform: uppercase;
         text-align: center;
     }
     p {
-        margin: 0 5rem;
+        margin: 0;
     }
+}
+p.p1 {
+    font-family: 'merriweatherlight';
+    font-size: 1.2rem;
+    padding-bottom: 1.2rem;
+    line-height: 1.75;
+}
+p.p3 {
+    font-size: 1.2rem;
+    line-height: 1.75;
 }
 
 .page-template .about-content{

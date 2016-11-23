@@ -3,14 +3,14 @@
 /*******************/
 .search-no-results .content-area{
     display: flex;
-    padding-top: 4rem;
+    padding-top: 3rem;
+    margin: 0;
+    .site-main{
+        margin: 0;
+        max-width: 1120px;
+        
+    }
 }
-.search-no-results .site-content{
-    width: 1120px;
-}
-
-
-
 /********************/
 /* Search form
 /**********************/
