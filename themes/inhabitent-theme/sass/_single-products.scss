@@ -1,4 +1,4 @@
-/*.taxonomy-description {
+.taxonomy-description {
     margin-bottom: 3rem;
     border-bottom: 1px dashed #c8c8c8;
 
@@ -52,9 +52,13 @@
     .price {
         font-size: 1.7rem;
     }
-}*/
+}
 
-.single-product .hentry {
+.content-areahome{
+    padding-left: 8rem;
+}
+
+/*.single-product .hentry {
     display: flex;
     justify-content: space-between;
 }
@@ -62,11 +66,7 @@
     width: 48%;
     line-height: 1.75;
 }
-h1 {
-    color: #d99054;
-    text-transform: uppercase;
-}
 .social-button {
     color: #404040;
     font-size: 1rem;
-}
+}*/

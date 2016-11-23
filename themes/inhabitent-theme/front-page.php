@@ -39,7 +39,7 @@ get_header(); ?>
           <?php echo $term->description ?>
         </p>
 
-  <p><a href="<?php echo $url ?>" class="shop-botton"><?php echo $term->name.' Stuff'; ?></a></p>
+<p><a href="<?php echo $url ?>" class="shop-botton"><?php echo $term->name.' Stuff'; ?></a></p>
     </div>
         <?php
         }

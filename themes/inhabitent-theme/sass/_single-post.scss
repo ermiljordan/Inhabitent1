@@ -1,6 +1,6 @@
 .single-post .content-area {
   display: flex;
-  margin: 10% 5%;
+  margin: 0 auto;
   width: 1120px;
 }
 
@@ -73,6 +73,7 @@ ul li {
     color: black;
     letter-spacing: 2px;
     text-transform: uppercase;
+    text-align: left;
 }
 
 .comment-reply-title {
