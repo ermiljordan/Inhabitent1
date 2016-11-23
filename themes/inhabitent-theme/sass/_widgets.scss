@@ -3,7 +3,7 @@
 --------------------------------------------------------------*/
 
 .widget {
-	margin: 0 0 3rem;
+	margin: 0 0 $base__space-unit;
 
 	/* Make sure select elements fit in widgets. */
 	select {
@@ -12,13 +12,48 @@
 }
 
 /* Search widget. */
-.widget_search .search-submit {
-	display: none;
-}
-.widget-area{
-	padding-left: 5%;
-	width: 27%;
-	border: none;
-	padding-top: 4rem;
+.widget-area {
+    padding: 2rem 3rem;
+    padding-right: 0;
+    font-size: 1.2rem;
+    padding-top: 3rem;
+    h2 {
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 1.4rem;
+        font-weight: bold;
+    }
+    a {
+        text-decoration: none;
+        color: #248a83;
+        font-family: 'merriweather';
+        font-size: 1.2rem;
+				line-height: 2.5;
+    }
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+    p {
+        font-size: 1.1rem;
+				line-height: 1.5;
+    }
+    .day-of-week {
+        font-weight: bold;
+    }
+    .fa {
+        padding-right: 10px;
+    }
+    .side-bar-address {
+        display: flex;
+        p {
+            margin: 0;
+            padding-right: 1rem;
+        }
+        i {
+            padding-top: 7px;
+        }
+    }
 }
 
