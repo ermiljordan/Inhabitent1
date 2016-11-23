@@ -2,6 +2,7 @@
   display: flex;
   width: 1120px;
   margin: 0 auto;
+
 }
 .blog,
 .single-post,
@@ -12,9 +13,10 @@
             width: 740px;
         }
     }
-    /*.site-main {
-        margin-bottom: 5rem;
-    }*/
+    .site-main {
+        border-right: 1px solid #e1e1e1;
+        padding-top: 2.3rem;
+    }
     .type-post .entry-content {
         width: 740px;
     }
@@ -75,20 +77,15 @@
         margin-right: 2rem;
     }
 }
-.read-more-article {
-    border: 1px solid black;
-    text-decoration: none;
-    color: black;
-    font-size: 1rem;
-    padding: .7rem 1.3rem;
-    margin-top: 4%;
-    text-transform: uppercase;
-    &:visited {
+      a.read-more {
+        text-decoration: none;
+        border: 1px solid black;
+        padding: 10px;
         color: black;
-    }
-    &:hover {
-        background-color: #248a83;
-        border: 1px solid #248a83;
-        color: white;
-    }
-}
+        text-transform: uppercase;
+         &:hover{
+           background-color:#19625d;
+           border: done;
+           color: white;
+         }
+      }

@@ -1,0 +1,35 @@
+.tax-product_type {
+  .site-content {
+    padding-top: 50px;
+  .content-area {
+    margin-bottom: 4rem;
+    }
+  }
+}
+.tax-product_type .boxes {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1120px;
+}
+.boxes {
+  justify-content: space-between
+}
+.product-post {
+  border: 1px solid #e1e1e1;
+  max-width: 23%;
+  margin-bottom: 1.5rem;
+}
+.tax-product_type .product-thumbnail {
+  background-color: #e1e1e1;
+  height: 250px;
+  overflow: hidden;
+  position: relative;
+}
+.product-grid .wp-post-image {
+  max-height: 250px;
+  left: 50%;
+  max-width: none;
+  top: 50%;
+  width: auto;
+}

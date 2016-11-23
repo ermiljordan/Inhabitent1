@@ -19,12 +19,13 @@ get_header(); ?>
 						<?php while ( have_posts() ) : the_post(); ?>
 						<div class="product-post">
 							<div class="product-thumbnail">
+							<div class="product-grid">
 								<a href="<?php the_permalink() ; ?> ">
 									<?php the_post_thumbnail( 'large' ); ?>
 								</a>
 							</div>
+							</div>
 							<div class="product-info">
-
 									<?php the_title('<p class="product-title">'); ?>
 									<?php echo CFS()->get( 'product_price' ); ?>
 		

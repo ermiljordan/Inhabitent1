@@ -1,28 +1,16 @@
-/*.page-id-59 .site-content {
+.page-id-59 {
+.site-content {
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
+  width: 1120px;
 }
-.page-id-59 .content-area {
+.content-area {
   border-right: 1px solid #e1e1e1;
-  width: 100%;
-  margin-left: 5%;
-  padding-right: 5%;
+  padding: 5%;
+  width: 73%;
 }
-.page-id-59 .site-main {
-  padding-top: 10%;
 }
-.page-id-59 .entry-title {
-  font-weight: bold;
-  text-transform: uppercase;
-}
-.page-id-59 .entry-content {
-  h2{
-    font-size: 2rem;
-    font-weight: bold;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    text-align: left;
-  }
-}*/
 
 .wpcf7-form {
     input[type=email],

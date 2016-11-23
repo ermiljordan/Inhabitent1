@@ -13,7 +13,6 @@
 .header {
     display: flex;
     height: 50px;
-    padding: .5rem 0;
     width: 1120px;
     justify-content: space-between;
     margin: 0 auto;
@@ -31,4 +30,10 @@
 .main-navigation a {
     padding-left: 1rem;
     color: #248a83;
+}
+.main-navigation {
+    display: flex;
+}
+.site-header {
+    width: 100%;
 }
