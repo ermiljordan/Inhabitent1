@@ -1,21 +1,53 @@
 /********************/
 /* 404 page 
 /*******************/
-.search-no-results .content-area{
-    display: flex;
-    padding-top: 3rem;
-    margin: 0;
-    .site-main{
+.error404 {
+    .widgettitle,
+    .widget-title {
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    ul {
+        list-style: none;
+        padding: 0;
         margin: 0;
-        max-width: 1120px;
-        
+        li a {
+            color: #248a83;
+            text-decoration: none;
+            font-family: 'merriweather';
+        }
+    }
+    #archives-dropdown--1 {
+        font-family: 'merriweather';
+    }
+    fieldset {
+        border: none;
     }
 }
-.search-no-results  .site-content {
-        margin-right: auto;
-        margin-left: auto;
-        width:1120px;
+
+.search-pagination {
+    margin-bottom: 3rem;
+    a {
+        text-decoration: none;
+        padding: .4rem .7rem;
+        background: #248a83;
+        text-transform: uppercase;
     }
+    .current {
+        color: white;
+        padding: .3rem .5rem;
+        background: grey;
+    }
+}
+.error404 .site-content {
+    display: flex;
+    width: 1120px;
+}
+.error404 .not-found {
+    border-right: 1px solid #e1e1e1;
+    padding-right: 20%;
+    margin-top: 4rem;
+}
 /********************/
 /* Search form
 /**********************/
@@ -37,3 +69,19 @@
         margin-left: auto;
         width:1120px;
     }
+
+//SEARCH RESULT//
+.search-no-results .content-area{
+    display: flex;
+}
+.search-no-results .site-content {
+    width: 1120px;
+}
+.search-no-results .site-main {
+    border-right: 1px solid #e1e1e1;
+    padding-right: 15%;
+    margin-top: 4rem;
+}
+fieldset {
+    border: none;
+}
