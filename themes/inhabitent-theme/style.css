@@ -1467,32 +1467,6 @@ article .comment-content p {
     color: #248a83;
     font-weight: 600; }
 
-.taxonomy-description p {
-  text-align: center;
-  margin-bottom: 3rem;
-  padding-bottom: 3rem; }
-
-.tax-product_type .product-types {
-  display: none; }
-
-.tax-product_type .product-area {
-  margin-bottom: 5rem; }
-
-/*--------------------------------------------------------------
-# Navigation
---------------------------------------------------------------*/
-.error404 .site-content {
+.search-results .content-area {
   display: -ms-flexbox;
-  display: flex;
-  width: 1120px;
-  margin-right: auto;
-  margin-left: auto; }
-
-.error404 .site-main {
-  padding: 10%; }
-
-.not-found {
-  padding-right: 70px; }
-
-h1 .page-title {
-  font-size: 2.5rem; }
+  display: flex; }
