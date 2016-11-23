@@ -13,9 +13,9 @@ get_header(); ?>
 
 			<?php get_template_part( 'template-parts/content', 'single' ); ?>
             <div class= "social-buttons">
-                <button class = "like-button" href ="#"><i class="fa fa-facebook" aria-hidden="true"></i> Like</a>
-                <button class = "twitter-button" href ="#"><i class="fa fa-twitter" aria-hidden="true"></i> Tweet</a>
-                <button class = "pinterest-button" href ="#"><i class="fa fa-pinterest" aria-hidden="true"></i> Pin</a>
+                <a class = "like-button" href ="#"><i class="fa fa-facebook" aria-hidden="true"></i> Like</a>
+                <a class = "twitter-button" href ="#"><i class="fa fa-twitter" aria-hidden="true"></i> Tweet</a>
+                <a class = "pinterest-button" href ="#"><i class="fa fa-pinterest" aria-hidden="true"></i> Pin</a>
 			</div>
             <?php the_post_navigation(); ?>
 

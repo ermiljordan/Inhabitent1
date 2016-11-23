@@ -23,19 +23,9 @@
 
 		<?php the_content(); ?>
         <div class = "social-button">
-
-					<button type ="button"  class="black" href ="">
-						<i class="fa fa-facebook-square" aria-hidden="true"> Like</i>
-					</button>
-
-					<button type ="button" class="black" href ="">
-						<i class="fa fa-twitter" aria-hidden="true"> Tweet</i>
-					</button>
-
-					<button type ="button" class="black" href ="">
-						<i class="fa fa-pinterest" aria-hidden="true"> Pin</i>
-					</button>
-
+                <a class = "like-button" href ="#"><i class="fa fa-facebook" aria-hidden="true"></i> Like</a>
+                <a class = "twitter-button" href ="#"><i class="fa fa-twitter" aria-hidden="true"></i> Tweet</a>
+                <a class = "pinterest-button" href ="#"><i class="fa fa-pinterest" aria-hidden="true"></i> Pin</a>
 				</div>
 		<?php
 			wp_link_pages( array(

@@ -1092,7 +1092,7 @@ h2 {
   float: right;
   width: 0;
   white-space: nowrap;
-  content: " . . . . . . . . . "; }
+  content: " . . . . . . . "; }
 
 .archive .entry-header {
   border: 1px solid #a1a1a1; }
@@ -1406,6 +1406,32 @@ article .comment-content p {
     color: #404040;
     font-size: 1rem;
 }*/
+.like-button,
+.twitter-button,
+.pinterest-button {
+  border: 1px solid black;
+  margin-bottom: 4rem;
+  text-decoration: none;
+  color: black;
+  font-size: .9rem;
+  padding: .6rem 1.5rem;
+  margin-top: 4%;
+  text-transform: uppercase; }
+  .like-button a,
+  .twitter-button a,
+  .pinterest-button a {
+    font-family: 'novocento'; }
+  .like-button:visited,
+  .twitter-button:visited,
+  .pinterest-button:visited {
+    color: black; }
+  .like-button:hover,
+  .twitter-button:hover,
+  .pinterest-button:hover {
+    background-color: #248a83;
+    border: 1px solid #248a83;
+    color: white; }
+
 /*--------------------------------------------------------------
 # Search Results Page 
 --------------------------------------------------------------*/

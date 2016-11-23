@@ -14,7 +14,8 @@
     <div id="primary" class="archive-area">
                     <?php while ( have_posts() ) : the_post(); ?>                 
                         <div class = "product-item">
-                        <article class= id="post-<?php the_ID(); ?>"<?php post_class(); ?>>
+                        <article class= id="post-<?php the_ID(); ?>"<?php post_class(); ?>
+
                             <div class = "product-thumbnail">
                                 <a href="<?php the_permalink() ; ?> "><?php the_post_thumbnail( 'large' ); ?></a>
                             </div>
@@ -34,3 +35,4 @@
 	</div><!-- #primary -->
 
 <?php get_footer(); ?>
+

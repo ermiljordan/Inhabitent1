@@ -70,3 +70,26 @@
     color: #404040;
     font-size: 1rem;
 }*/
+.like-button,
+.twitter-button,
+.pinterest-button {
+    border: 1px solid black;
+    margin-bottom: 4rem;
+    text-decoration: none;
+    color: black;
+    font-size: .9rem;
+    padding: .6rem 1.5rem;
+    margin-top: 4%;
+    text-transform: uppercase;
+    a {
+        font-family: 'novocento';
+    }
+    &:visited {
+        color: black;
+    }
+    &:hover {
+        background-color: #248a83;
+        border: 1px solid #248a83;
+        color: white;
+    }
+}
