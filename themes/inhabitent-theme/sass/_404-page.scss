@@ -14,11 +14,11 @@
         li a {
             color: #248a83;
             text-decoration: none;
-            font-family: 'merriweather';
+            font-family: 'merriweatherlight';
         }
     }
     #archives-dropdown--1 {
-        font-family: 'merriweather';
+        font-family: 'merriweatherlight';
     }
     fieldset {
         border: none;
@@ -51,7 +51,7 @@
 /********************/
 /* Search form
 /**********************/
-.search-results .content-area {
+/*.search-results .content-area {
     display: flex;
     padding-top: 3rem;
     margin: 0;
@@ -68,7 +68,7 @@
         margin-right: auto;
         margin-left: auto;
         width:1120px;
-    }
+    }*/
 
 //SEARCH RESULT//
 .search-no-results .content-area{

@@ -1,4 +1,7 @@
 
+.archive .site-content {
+    width: 1120px
+}
 .archive h1.page-title {
   text-align: center;
   text-transform: uppercase;
@@ -16,6 +19,8 @@
             display: flex;
             justify-content: space-between;
             padding: 10px;
+            font-family: 'merriweatherlight';
+            font-size:1rem;
             p {
                 margin: 0;
             }
@@ -67,6 +72,7 @@
 
 .shop-stuff-items {
   text-align: center;
+  border-bottom: dotted #e1e1e1;
 }
 .archive .shop-stuff-items {
         text-align: center;
