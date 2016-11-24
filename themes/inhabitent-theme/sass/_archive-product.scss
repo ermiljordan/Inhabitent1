@@ -1,6 +1,7 @@
 
 .archive .site-content {
-    width: 1120px
+    width: 1120px;
+    display: flex;
 }
 .archive h1.page-title {
   text-align: center;
@@ -8,6 +9,7 @@
   margin:0;
   font-weight: bold;
 }
+
 
 .archive .allProducts {
   display: flex;
@@ -36,12 +38,12 @@
        }
    }
 
-   .archive .entry-title:after {
+   /*.archive .entry-title:after {
         float: right;
         width: 0;
         white-space: nowrap;
         content: " . . . . . . . "
-    }
+    }*/
     .archive .entry-header {
         border: 1px solid #a1a1a1;
         img {
@@ -66,8 +68,8 @@
     }
 
     .archive .page-header {
-            border-bottom: 1px dashed grey;
             margin: 0 10% 5% 10%;
+            padding-top: 3rem;
         }
 
 .shop-stuff-items {

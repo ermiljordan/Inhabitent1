@@ -622,7 +622,8 @@ a {
     margin: 0; }
   .widget-area p {
     font-size: 1rem;
-    line-height: 1.5; }
+    line-height: 1.5;
+    font-family: 'merriweatherlight'; }
   .widget-area .day-of-week {
     font-weight: bold; }
   .widget-area .fa {
@@ -1148,7 +1149,9 @@ a.read-more {
     color: white; }
 
 .archive .site-content {
-  width: 1120px; }
+  width: 1120px;
+  display: -ms-flexbox;
+  display: flex; }
 
 .archive h1.page-title {
   text-align: center;
@@ -1184,12 +1187,12 @@ a.read-more {
   .archive .product-details span {
     background-color: white; }
 
-.archive .entry-title:after {
-  float: right;
-  width: 0;
-  white-space: nowrap;
-  content: " . . . . . . . "; }
-
+/*.archive .entry-title:after {
+        float: right;
+        width: 0;
+        white-space: nowrap;
+        content: " . . . . . . . "
+    }*/
 .archive .entry-header {
   border: 1px solid #a1a1a1; }
   .archive .entry-header img {
@@ -1211,8 +1214,8 @@ a.read-more {
     color: black; }
 
 .archive .page-header {
-  border-bottom: 1px dashed grey;
-  margin: 0 10% 5% 10%; }
+  margin: 0 10% 5% 10%;
+  padding-top: 3rem; }
 
 .shop-stuff-items {
   text-align: center;
@@ -1263,7 +1266,8 @@ p.p1 {
 
 p.p3 {
   font-size: 1rem;
-  line-height: 1.75; }
+  line-height: 1.75;
+  font-family: 'merriweatherlight'; }
 
 .page-template .about-content {
   margin: 3rem auto;
@@ -1280,10 +1284,6 @@ p.p3 {
   display: -ms-flexbox;
   display: flex;
   width: 1120px; }
-  .page-id-59 .site-content p {
-    font-family: 'merriweatherlight';
-    font-size: 1.2rem;
-    line-height: 1.5rem; }
 
 .page-id-59 .content-area {
   border-right: 1px solid #e1e1e1;

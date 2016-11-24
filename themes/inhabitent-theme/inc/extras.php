@@ -66,11 +66,16 @@ function get_product_posts($query) {
 }
 add_action( 'pre_get_posts', 'get_product_posts');
 // filter archive title
-function archive_product_title( $title ) {
-        $title = 'Shop Stuff';
-    return $title;
+function archive_product_title( $title) {
+	if(is_post_type_archive('product')){
+		$title = 'Shop Stuff';
+	}
+	elseif( is_tax()) {
+		$title = single_term_title('', false);
+	}
+	return $title;
 }
-add_filter( 'get_the_archive_title', 'archive_product_title');
+add_filter('get_the_archive_title', 'archive_product_title');
 
 /*
 *   Retrieve the archive title for Do, Eat, Sleep and Wear
